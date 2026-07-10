@@ -1,0 +1,50 @@
+>>> texte = "Arch c'est cool"     # str = chaîne de caractères = texte
+>>> nombre_entier = 42            # int = integer = nombre sans virgule
+>>> nombre_virgule = 3.14         # float = nombre à virgule
+>>> vrai_ou_faux = True           # bool = True ou False
+
+>>> type(texte)
+<class 'str'>
+
+Concept
+
+Code
+
+Ça fait quoi
+
+Afficher
+
+print("texte")
+
+Montre du texte
+
+Variable
+
+x = 5
+
+Range 5 dans x
+
+Demander
+
+nom = input("?")
+
+Pose une question
+
+Convertir
+
+int("5")
+
+Texte "5" → nombre 5
+
+Condition
+
+if x > 0:
+
+Si x positif...
+
+Boucle
+
+for i in range(3):
+
+Répète 3 fois
+
