@@ -1,0 +1,9 @@
+#limité la charge de la bat a 80%#
+sudo pacman -S tlp 
+sudo tlp setcharge 75 80 BATO
+
+#verifier le model du bios#
+sudo dmidecode -s bios-version
+
+#trouver le nom de l'ordinateur#
+sudo dmidecode -s system-product-name
