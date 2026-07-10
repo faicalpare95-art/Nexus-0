@@ -7,3 +7,25 @@ sudo dmidecode -s bios-version
 
 #trouver le nom de l'ordinateur#
 sudo dmidecode -s system-product-name
+
+sudo pacman -Syu              # Mettre tout à jour - fais ça 1x/semaine
+pacman -Qs firefox            # Chercher dans les paquets installés  
+pacman -Si linux              # Infos sur un paquet
+pacman -Qdt                   # Lister les dépendances orphelines
+sudo pacman -Rns nom_paquet   # Supprimer + dépendances + configs
+
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay && makepkg -si
+
+sudo pacman -Scc                   # Vider le cache de pacman de temps en temps
+paccache -r                        # Garder que les 3 dernières versions
+sudo pacman -Rns $(pacman -Qdtq)   # Virer les orphelinssudo pacman -Scc                   # Vider le cache de pacman de temps en temps
+paccache -r                        # Garder que les 3 dernières versions
+sudo pacman -Rns $(pacman -Qdtq)   # Virer les orphelins
+
+
+lsblk -f          # Voir tes partitions
+df -h             # Espace disque
+htop              # Processus - `sudo pacman -S htop` si t'as pas
+neofetch          # Récap du système
